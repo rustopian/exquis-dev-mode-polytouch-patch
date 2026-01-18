@@ -1,7 +1,7 @@
 # Exquis Dev Mode Polytouch Patch
 Patch for Exquis firmware 3.0 which enables pressure/pitchbend/polytouch data even when in Developer Mode.
 
-Developer Mode on the [Exquis](https://dualo.com/en/exquis-an-optimized-keyboard/) enables fine control of key LED colors by an application. But this mode removes any polytouch data, resulting in every pad sending on `velocity=0` (`NoteOff`) or `velocity=127` (`NoteOn`) messages.
+Developer Mode on the [Exquis](https://dualo.com/en/exquis-an-optimized-keyboard/) enables fine control of key LED colors by an application. But this mode removes any polytouch data, resulting in every pad sending **only** `velocity=0` (`NoteOff`) or `velocity=127` (`NoteOn`) messages.
 
 This limitation is detrimental to applications that wish to set the colors of the Exquis keyboard while the user is playing it - tutorial applications, theory applications, performance apps with scale highlighting, color indication of scrolling octaves, and so on.
 
