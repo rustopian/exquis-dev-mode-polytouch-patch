@@ -5,14 +5,14 @@ Developer Mode on the [Exquis](https://dualo.com/en/exquis-an-optimized-keyboard
 
 This limitation is detrimental to applications that wish to set the colors of the Exquis keyboard while the user is playing it - tutorial applications, theory applications, performance apps with scale highlighting, color indication of scrolling octaves, and so on.
 
+**Note that you will still receive the initial default `velocity=127` `NoteOn` as well. Your application should understand that this initial velocity does not represent full pressure.**
+
 ## Repo Contents
 
 This repository contains:
 
 - a Python script that patches the [3.0 Exquis firmware](https://dualo.com/en/welcome/) .bin file to eliminate the gate which blocks pressure information. You may need to find the file - on macOS, for example, it is located in Exquis_Fw_Updater.app/Contents/Resources/H723ZETx.bin
 - the patched .bin, for convenience
-
-Note that you will still receive the default `velocity=127` `NoteOn` as well.
 
 ## Explanation
 
