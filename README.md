@@ -10,6 +10,8 @@ This repository contains:
 - a Python script that patches the [3.0 Exquis firmware](https://dualo.com/en/welcome/) .bin file to eliminate the gate which blocks pressure information. You may need to find the file - on macOS, for example, it is located in Exquis_Fw_Updater.app/Contents/Resources/H723ZETx.bin
 - the patched .bin, for convenience
 
+Note that you will still receive the default `velocity=127` `NoteOn` as well.
+
 This comes with no warranty, although flashing the Exquis device in this way is extremely safe. I also do not guarantee that it will work for any version of the firmware other than 3.0.
 
 I have asked the team to modify this behavior, so hopefully a future release will remove the need for this patch.
