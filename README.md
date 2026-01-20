@@ -5,6 +5,8 @@ Developer Mode on the [Exquis](https://dualo.com/en/exquis-an-optimized-keyboard
 
 This limitation is detrimental to applications that wish to set the colors of the Exquis keyboard while the user is playing it - tutorial applications, theory applications, performance apps with scale highlighting, color indication of scrolling octaves, and so on.
 
+This minimal patch removes the limitation.
+
 **Note that you will still receive the initial default `velocity=127` `NoteOn` as well. Your application should understand that this initial velocity does not represent full pressure.**
 
 ## Repo Contents
